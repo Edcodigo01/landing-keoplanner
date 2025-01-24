@@ -1,0 +1,685 @@
+@defer {
+<section #top class="wrapper-banner">
+  <img
+    class="bg-banner-up"
+    src="assets/img/banner/bg-first.png"
+    alt="banner | https://keoplanner.com"
+  />
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--6 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h1 class="title-app animate__animated animate__slideInLeft">
+            Aumenta el crecimiento de tu negocio con el
+            <span [ngStyle]="{ color: 'var(--text)' }">nuevo</span> sistema de
+            reservas online.
+          </h1>
+          <p class="subtitle-app animate__animated animate__slideInLeft">
+            <strong>Planner</strong> ayuda a pequeñas y medianas empresas a
+            optimizar su tiempo y recursos, es la agenda digital que organiza
+            las reservas online de manera automática mientras enfocas tu
+            atención en otros aspectos claves de tu negocio.
+          </p>
+          <button
+            type="button"
+            (click)="goFreeTrial()"
+            class="button-app button-app--second-color mt-2 animate__animated animate__slideInLeft"
+            style="padding: 1rem 3rem !important"
+          >
+            Prueba gratis
+          </button>
+        </div>
+      </div>
+      <div class="keo-col--6 keo-col--table-12 keo-col--mobile-12">
+        <img
+          class="bg-portal animate__animated animate__slideInRight"
+          src="assets/img/banner/bg-portal.png"
+          alt="portal | planner.com"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrapper-how-help">
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h2
+            class="title-app text-center animate__animated animate__slideInDown"
+          >
+            ¿Cómo te ayudará Planner?
+          </h2>
+        </div>
+      </div>
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="how-help">
+          <div
+            [style]="'--bg-color:' + 'var(--first-color)'"
+            class="how-help__item animate__animated animate__fadeIn"
+          >
+            <span class="icon fi fi-br-building"></span>
+            <h3 class="title">Lleve su negocio a internet</h3>
+            <p class="descripcion">
+              Aumenta las ventas con la oportunidad de poder reservar las 24
+              horas del día y expande tu negocio a través de las redes sociales
+            </p>
+          </div>
+          <div
+            [style]="'--bg-color:' + 'var(--second-color)'"
+            class="how-help__item animate__animated animate__fadeIn"
+          >
+            <span class="icon fi fi-br-business-time"></span>
+            <h3 class="title">Organice y ahorre tiempo</h3>
+            <p class="descripcion">
+              Ofrece a los clientes el poder reservar desde cualquier
+              dispositivo facilmente manteniendo el orden de tu agenda
+            </p>
+          </div>
+          <div
+            [style]="'--bg-color:' + 'var(--third-color)'"
+            class="how-help__item animate__animated animate__fadeIn"
+          >
+            <span class="icon fi fi-br-calendar-lines"></span>
+            <h3 class="title">Reservas garantizadas</h3>
+            <p class="descripcion">
+              Disminuye las Inasistencias con recordatorios confirmables por
+              whatsapp y correo electrónico a cada cliente un día antes de la
+              cita
+            </p>
+          </div>
+          <div
+            [style]="'--bg-color:' + 'var(--fourth-color)'"
+            class="how-help__item animate__animated animate__fadeIn"
+          >
+            <span class="icon fi fi-br-opacity"></span>
+            <h3 class="title">Sistema personalizable</h3>
+            <p class="descripcion">
+              Configura los servicios que se ofrecen en tu negocio mostrando la
+              disponibilidad y precios en tiempo real
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrapper-reservation-help">
+  <img
+    class="bg-banner-up"
+    src="assets/img/banner/bg-first-2.png"
+    alt="banner | https://keoplanner.com"
+  />
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h2
+            class="title-app text-center animate__animated animate__slideInDown"
+          >
+            Reserva en línea desde cualquier lugar
+          </h2>
+          <p
+            class="subtitle-app text-center animate__animated animate__slideInDown"
+          >
+            Planner es la solución ideal para las empresas de servicios, se
+            encarga de agendar las reservas de sus clientes aumentando la
+            productividad en su negocio en tan solo tres simples pasos:
+          </p>
+        </div>
+      </div>
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="reservation-help">
+          <img
+            class="bg-portal"
+            [src]="'assets/img/banner/paso-' + reservationHelp + '.png'"
+            alt="pasos | https://keoplanner.com"
+          />
+          <div class="reservation-help__nav">
+            <p
+              class="item animate__animated animate__slideInRight"
+              (click)="restaurarAnimation(1)"
+              [class]="reservationHelp === 1 ? 'active' : ''"
+            >
+              Elija un servicio
+            </p>
+            <p
+              class="item animate__animated animate__slideInRight"
+              (click)="restaurarAnimation(2)"
+              [class]="reservationHelp === 2 ? 'active' : ''"
+            >
+              Seleccione una fecha y una hora
+            </p>
+            <p
+              class="item animate__animated animate__slideInRight"
+              (click)="restaurarAnimation(3)"
+              [class]="reservationHelp === 3 ? 'active' : ''"
+            >
+              Agregue sus datos personales
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@if (business.length >= 2) {
+<section class="wrapper-rubros">
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h2
+            class="title-app text-center animate__animated animate__slideInDown"
+          >
+            Varios negocios están usando Planner
+          </h2>
+          <p
+            class="subtitle-app text-center animate__animated animate__slideInDown"
+          >
+            Planner es muy flexible. Haz clic en los diversos clientes de abajo
+            para ver su web de reservas.
+          </p>
+        </div>
+      </div>
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <p-carousel
+          [value]="business"
+          [numVisible]="3"
+          [numScroll]="3"
+          [circular]="false"
+          [responsiveOptions]="responsiveOptions"
+        >
+          <ng-template let-business pTemplate="item">
+            <div class="business">
+              <div class="logo">
+                <img
+                  [src]="business.logo != null ? business.logo : 'assets/img/not-data-carita.svg'"
+                  [alt]="business.name_busi"
+                />
+              </div>
+              <div class="data">
+                <h4 class="title">{{ business.name_busi }}</h4>
+                <button
+                  type="button"
+                  [routerLink]="'/business/' + business.slug_business"
+                  class="button-app button-app--third-color"
+                >
+                  Visitar
+                </button>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+} @if (clientes.length) {
+<section class="wrapper-nos-aman">
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h2
+            class="title-app text-center animate__animated animate__slideInDown"
+          >
+            ¿Por qué nos aman los clientes?
+          </h2>
+        </div>
+      </div>
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <p-carousel
+          [value]="clientes"
+          [numVisible]="1"
+          [autoplayInterval]="4000"
+          [showIndicators]="false"
+          [numScroll]="1"
+          [circular]="true"
+        >
+          <ng-template let-clientes pTemplate="item">
+            <div class="clientes">
+              <div class="logo">
+                <img
+                  [src]="clientes.avatar != null ? clientes.avatar : 'assets/img/not-data-carita.svg'"
+                  [alt]="clientes.name_busi"
+                />
+              </div>
+              <div class="data">
+                <h4 class="title">{{ clientes.description }}</h4>
+                <hr class="separador" />
+                <p class="att">
+                  {{ clientes.fullname }} - {{ clientes.name_busi }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+}
+
+<section
+  class="wrapper-video"
+  [style]="'--bg: url(' + 'assets/img/planner/promocional-planner.png' + ');'"
+>
+  <button (click)="showVideo = true" class="button-youtube">
+    <span class="icon fi fi-sr-play"></span>
+  </button>
+  <div class="show-image-full" [ngClass]="[showVideo ? 'show' : '']">
+    <span
+      (click)="showVideo = false"
+      class="icon-close fi fi-br-cross-small"
+    ></span>
+    @if (showVideo) {
+    <iframe
+      class="video"
+      src="https://www.youtube.com/embed/G5gPVBlWwVU"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    }
+    <div (click)="showVideo = false" class="cortina-image"></div>
+  </div>
+</section>
+
+<section class="wrapper-others-functions-beneficies">
+  <img
+    class="bg-banner-up"
+    src="assets/img/map.svg"
+    alt="map | https://keoplanner.com"
+  />
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="others-functions-beneficies">
+          <div class="others-functions-beneficies__left">
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #dc9f82;'"
+            >
+              <span class="icon fi fi-br-settings"></span>
+              <p class="text">
+                Capacitación inicial de configuración y funciones del sistema.
+              </p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #45aea1;'"
+            >
+              <span class="icon fi fi-br-comment-alt"></span>
+              <p class="text">
+                Soporte de chat en vivo disponible las 24 horas del día.
+              </p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #3175b4;'"
+            >
+              <span class="icon fi fi-br-file-chart-pie"></span>
+              <p class="text">Informes de clientes, ventas y reservas.</p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #b5c33e;'"
+            >
+              <span class="icon fi fi-br-people-poll"></span>
+              <p class="text">
+                Creación de perfiles según tu organización de trabajo.
+              </p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #a45c4c;'"
+            >
+              <span class="icon fi fi-br-book-bookmark"></span>
+              <p class="text">
+                Disponibilidad de más de una agenda para tu equipo de trabajo.
+              </p>
+            </div>
+          </div>
+          <div class="others-functions-beneficies__center">
+            <p class="title-app text-center">
+              Otras funciones y beneficios de Planner
+            </p>
+          </div>
+          <div class="others-functions-beneficies__right">
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #78b3d6;'"
+            >
+              <span class="icon fi fi-br-network-cloud"></span>
+              <p class="text">Datos protegidos y almacenados en la nube.</p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #687b8d;'"
+            >
+              <span class="icon fi fi-br-browser"></span>
+              <p class="text">Sistema adaptable a cualquier dispositivo.</p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #de4d06;'"
+            >
+              <span class="icon fi fi-br-share"></span>
+              <p class="text">
+                Comparte tu link exclusivo en tus redes sociales.
+              </p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #ad3182;'"
+            >
+              <span class="icon fi fi-br-video-camera-alt"></span>
+              <p class="text">
+                Integraciones con google meet para generar link de video
+                conferencia.
+              </p>
+            </div>
+            <div
+              class="others-functions-beneficies__item"
+              [style]="'--bg-color: #164a69;'"
+            >
+              <span class="icon fi fi-br-donate"></span>
+              <p class="text">
+                Sistema de pago (Consulta la disponibilidad para tu país).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrapper-juntos-somos-mas">
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="info flex xCenter yCenter">
+          <button
+            type="button"
+            (click)="goFreeTrial()"
+            class="button-app button-app--second-color m-0"
+            style="
+              padding: 1.5rem !important;
+              font-size: var(--fs-title) !important;
+            "
+          >
+            Quiero mi prueba gratis
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section #faq class="wrapper-faq">
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h2 class="title-app text-center m-0">Preguntas frecuentes</h2>
+        </div>
+      </div>
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <p-accordion [multiple]="true">
+          <p-accordionTab header="1. ¿Qué es Planner?">
+            <p>
+              <strong>Planner</strong> es la agenda digital que organiza las
+              reservas online de manera automática mientras te enfocas en otros
+              aspectos claves de tu negocio, te ayuda a optimizar tu tiempo y
+              recursos contribuyendo al crecimiento de tu empresa.
+            </p>
+          </p-accordionTab>
+          <p-accordionTab header="2. ¿Por qué debo usar Planner en mi negocio?">
+            <p>
+              <strong>Planner</strong> te permitirá mantener las reservas de
+              citas de tu negocio disponible las 24 horas del día, es tan
+              práctico que tus clientes pueden reservar a cualquier hora, desde
+              cualquier lugar y dispositivo, es un sistema exclusivo de
+              asistencia virtual hecho para ti.
+            </p>
+            <p>
+              Al ofrecer tu negocio con <strong>Planner</strong> podrás llegar a
+              muchas más personas, lo que se traduce en incrementar tu número de
+              clientes y con ello tus ingresos; asegura la asistencia de tus
+              clientes con pagos, abonos por adelantado y recordatorios
+              confirmables por WhatsApp y correo electrónico previo a la cita.
+            </p>
+          </p-accordionTab>
+          <p-accordionTab header="3. ¿Quiénes pueden usar Planner?">
+            <p>
+              Todas las empresas de servicios que requieran de una cita previa
+            </p>
+            <ul>
+              <li>
+                <strong>Centros de Belleza</strong>: Barberías, Peluquerías,
+                Manicuristas, Pedicuristas.
+              </li>
+              <li>
+                <strong>Centros de Estética</strong>: Spas, Cosmetólogos,
+                Quiromasajista.
+              </li>
+              <li>
+                <strong>Centros de Salud</strong>: Médicos Particulares,
+                Odontología, Ginecología, Clínicas, Fisioterapeutas,
+                Kinesiólogos.
+              </li>
+              <li>
+                <strong>Centros Deportivos</strong>: Gimnasio, Crossfit,
+                Pilates, Yoga.
+              </li>
+              <li>
+                <strong>Centros Educativos</strong>: Clases y/o Cursos
+                presenciales u Online.
+              </li>
+              <li>
+                Y otros… (consulta por tu negocio si no se encuentra en la
+                lista).
+              </li>
+            </ul>
+          </p-accordionTab>
+          <p-accordionTab header="4. ¿Qué otros beneficios tiene Planner?">
+            <p>
+              <strong>Planner</strong> es un sistema totalmente personalizable,
+              donde puedes configurar los servicios que se ofrecen en tu
+              negocio, mostrando la disponibilidad y precios actualizados en
+              tiempo real, podrás agendar manualmente si lo deseas y bloquear
+              aquellas horas en las que tus servicios no estarán disponibles.
+            </p>
+            <p>
+              Todas las personas que reserven en tu negocio con
+              <strong>Planner</strong> sus datos personales quedaran registrados
+              en una base de datos generando así distintos tipos de reportes,
+              dando a conocer a tus clientes potenciales, los servicios más
+              utilizados, total de reservas, ventas por servicio, entre otros,
+              según el rango de fecha seleccionado.
+            </p>
+            <p>
+              Los datos registrados se encontrarán protegidos en la nube, con lo
+              que te permitirá resguardar las métricas para luego determinar e
+              implementar las mejoras en tu negocio.
+            </p>
+            <p>
+              Integra <strong>Planner</strong> con
+              <strong>Google meet</strong> a servicios que requieran de un link
+              de video conferencia. Comparte tu web de reserva para aumentar el
+              flujo de asistencia de personas en tu negocio, solo debes colocar
+              tu link en las redes sociales como
+              <strong>Facebook, Instagram, twitter, tiktok</strong> y otros.
+            </p>
+          </p-accordionTab>
+          <p-accordionTab
+            header="5. ¿Cómo puedo implementar Planner a mi negocio?"
+          >
+            <p>
+              Obtén aquí tu <strong>prueba gratis por 14 días</strong> con
+              soporte de chat en vivo las 24 horas del día, donde te ayudamos a
+              configurar tu negocio.
+            </p>
+          </p-accordionTab>
+        </p-accordion>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section #contact class="wrapper-contact">
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--6 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h2 class="title-app animate__animated animate__slideInDown">
+            Contáctanos
+          </h2>
+          <p class="subtitle-app animate__animated animate__slideInLeft">
+            ¿Necesitas ayuda? llena el formulario de contacto y nos
+            comunicaremos contigo a la brevedad.
+          </p>
+          <img
+            class="bg-contact"
+            src="assets/img/planner/bg-contact.svg"
+            alt="contacto | https://keoplanner.com"
+          />
+        </div>
+      </div>
+      <div class="keo-col--6 keo-col--table-12 keo-col--mobile-12">
+        <form [formGroup]="formContact" class="form" (ngSubmit)="sendMessage()">
+          <div class="keo-col-row">
+            <div class="keo-col--12">
+              <div
+                class="form-group"
+                [class]="formContact.get('name')?.errors && formContact.get('name')?.touched ? 'no-valid' : ''"
+                [attr.message-error]="f['name'].errors?.required ? 'El nombre y el apellido son obligatorios' : f['name'].errors?.minlength ? 'El nombre y el apellido debe tener al menos mínimo 3 caracteres' : f['name'].errors?.maxlength ? 'El nombre y el apellido no debe exceder un máximo de 45 caracteres' : ''"
+              >
+                <label class="form-label">Nombre y Apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="name"
+                  (keyup)="validatorsUtils.onlyTextAndSpaces($event)"
+                  (keydown)="validatorsUtils.onlyTextAndSpaces($event)"
+                  minlength="3"
+                  maxlength="45"
+                />
+              </div>
+            </div>
+            <div class="keo-col--12">
+              <div
+                class="form-group"
+                [class]="formContact.get('email')?.errors && formContact.get('email')?.touched ? 'no-valid' : ''"
+                [attr.message-error]="f['email'].errors?.required ? 'El correo es obligatorio' : f['email'].errors?.pattern ? 'El correo ingresado no es valido' : ''"
+              >
+                <label class="form-label">Correo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="email"
+                />
+              </div>
+            </div>
+            <div class="keo-col--12">
+              <div class="keo-col-row">
+                <div class="keo-col--4 keo-col--table-4 keo-col--mobile-12">
+                  <div class="form-group">
+                    <label class="form-label"
+                      >Región @if (formContact.get('id_format_phone')?.value ==
+                      'disabled') {
+                      <span>(opcional)</span>
+                      }</label
+                    >
+                    <keo-select-filter
+                      class="form-control pl-0 pr-0"
+                      (valor)="onChange($event)"
+                      [data]="selectRegion"
+                    ></keo-select-filter>
+                  </div>
+                </div>
+                <div class="keo-col--8 keo-col--table-8 keo-col--mobile-12">
+                  <div
+                    class="form-group"
+                    [class]="formContact.get('id_format_phone')?.value == 'disabled' ? '' : formContact.get('phone')?.errors && formContact.get('phone')?.touched ? 'no-valid' : ''"
+                    [attr.message-error]="formContact.get('id_format_phone')?.value == 'disabled' ? '' : f['phone'].errors?.required ? 'El teléfono es obligatorio' : f['phone'].errors?.pattern ? 'El teléfono no es válido' : ''"
+                  >
+                    <label
+                      class="form-label"
+                      [attr.readonly]="formContact.get('id_format_phone')?.value == 'disabled' ? true: false"
+                      >Teléfono @if (formContact.get('id_format_phone')?.value
+                      == 'disabled') {
+                      <span>(opcional)</span>
+                      }</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="phone"
+                      [placeholder]="phonePlaceholder"
+                      [readonly]="formContact.get('id_format_phone')?.value == 'disabled' ? true: false"
+                      [mask]="phoneMask"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="keo-col--12">
+              <div
+                class="form-group"
+                [class]="formContact.get('subject')?.errors && formContact.get('subject')?.touched ? 'no-valid' : ''"
+                [attr.message-error]="f['subject'].errors?.required ? 'El asunto es obligatorio' : f['subject'].errors?.minlength ? 'El asunto debe tener al menos mínimo 3 caracteres' : f['subject'].errors?.maxlength ? 'El asunto no debe exceder un máximo de 60 caracteres' : ''"
+              >
+                <label class="form-label">Aunto</label>
+                @if (showSubject) {
+                <keo-select-filter
+                  class="form-control pl-0 pr-0"
+                  (valor)="selectedSubject($event)"
+                  [data]="selectSubject"
+                ></keo-select-filter>
+                }
+              </div>
+            </div>
+            <div class="keo-col--12">
+              <div
+                class="form-group"
+                [class]="formContact.get('message')?.errors && formContact.get('message')?.touched ? 'no-valid' : ''"
+                [attr.message-error]="f['message'].errors?.required ? 'El mensaje es obligatorio' : f['message'].errors?.minlength ? 'El mensaje debe tener al menos mínimo 3 caracteres' : f['message'].errors?.maxlength ? 'El mensaje no debe exceder un máximo de 500 caracteres' : ''"
+              >
+                <label class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  formControlName="message"
+                  minlength="3"
+                  maxlength="500"
+                ></textarea>
+              </div>
+            </div>
+            <div class="keo-col--12">
+              <div class="form-footer flex xCenter yCenter">
+                <button
+                  [disabled]="formContact.invalid || loadServiceContact"
+                  class="button-app button-app--first-color"
+                >
+                  {{ BASE_TRANSLATE_SHARED + '.buttons.btn_accept' | translate
+                  }}
+                  <keo-loader-button
+                    [show-loading]="loadServiceContact"
+                    [disabled]="true"
+                  ></keo-loader-button>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+}

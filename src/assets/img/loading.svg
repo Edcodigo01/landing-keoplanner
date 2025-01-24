@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1223.49 304.34">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #e84b1f;
+            }
+
+            .cls-4 {
+                fill: #f1896c;
+            }
+
+            .cls-5 {
+                clip-path: url(#clip-path-2);
+            }
+
+            .cls-6 {
+                clip-path: url(#clip-path-3);
+            }
+
+            .cls-7 {
+                clip-path: url(#clip-path-4);
+            }
+
+            .cls-8 {
+                clip-path: url(#clip-path-5);
+            }
+
+            .esfera {
+                transform-origin: center;
+                opacity: 1;
+                transform: translateY(-10px);
+                transition: transform .15s ease-in-out;
+            }
+
+            .esfera--1 {
+                animation: opacity .75s ease-in-out infinite alternate;
+            }
+
+            .esfera--2 {
+                animation: opacity .75s .25s ease-in-out infinite alternate;
+            }
+
+            .esfera--3 {
+                animation: opacity .75s .5s ease-in-out infinite alternate;
+            }
+
+            .esfera--4 {
+                animation: opacity .75s .75s ease-in-out infinite alternate;
+            }
+
+            .esfera--5 {
+                animation: opacity .75s 1s ease-in-out infinite alternate;
+            }
+
+            @keyframes opacity {
+                from {
+                    opacity: 1;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: .75;
+                    transform: translateY(20px);
+                }
+            }
+        </style>
+        <clipPath id="clip-path">
+            <circle class="cls-1" cx="178.5" cy="152.17" r="76.91" />
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <circle class="cls-1" cx="395.12" cy="152.17" r="76.91" />
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <circle class="cls-1" cx="611.74" cy="152.17" r="76.91" />
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <circle class="cls-1" cx="828.37" cy="152.17" r="76.91" />
+        </clipPath>
+        <clipPath id="clip-path-5">
+            <circle class="cls-1" cx="1044.99" cy="151.84" r="76.91" />
+        </clipPath>
+    </defs>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="loading">
+            <rect class="cls-1" width="1223.49" height="304.34" />
+            <g id="esfera-5" class="esfera esfera--5">
+                <g class="cls-2">
+                    <circle class="cls-3" cx="176.31" cy="152.69" r="76.91" />
+                    <ellipse class="cls-4" cx="112.92" cy="152.17" rx="76.91" ry="73.3" />
+                </g>
+            </g>
+            <g id="esfera-4" class="esfera esfera--4">
+                <g class="cls-5">
+                    <circle class="cls-3" cx="392.93" cy="152.69" r="76.91" />
+                    <ellipse class="cls-4" cx="329.54" cy="152.17" rx="76.91" ry="73.3" />
+                </g>
+            </g>
+            <g id="esfera-3" class="esfera esfera--3">
+                <g class="cls-6">
+                    <circle class="cls-3" cx="609.56" cy="152.69" r="76.91" />
+                    <ellipse class="cls-4" cx="546.17" cy="152.17" rx="76.91" ry="73.3" />
+                </g>
+            </g>
+            <g id="esfera-2" class="esfera esfera--2">
+                <g class="cls-7">
+                    <circle class="cls-3" cx="826.18" cy="152.69" r="76.91" />
+                    <ellipse class="cls-4" cx="762.79" cy="152.17" rx="76.91" ry="73.3" />
+                </g>
+            </g>
+            <g id="esfera-1" class="esfera esfera--1">
+                <g class="cls-8">
+                    <circle class="cls-3" cx="1042.8" cy="152.36" r="76.91" />
+                    <ellipse class="cls-4" cx="979.41" cy="151.84" rx="76.91" ry="73.3" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

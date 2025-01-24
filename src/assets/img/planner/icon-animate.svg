@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500">
+    <defs>
+        <style>
+            .color-first {
+                fill: #495057;
+                animation: ShowColorFirst .25s 2s ease-in-out forwards;
+            }
+
+            .color-second {
+                fill: #495057;
+                animation: ShowColorSecond .25s 2s ease-in-out forwards;
+            }
+
+            .color-third {
+                fill: #495057;
+                animation: ShowColorThird .25s 2s ease-in-out forwards;
+            }
+
+            .color-fourth {
+                fill: #495057;
+                animation: ShowColorFourth .25s 2s ease-in-out forwards;
+            }
+
+            .isotipo {
+                transform-origin: center;
+                transform: scale(.9);
+                animation: Suspire .75s 2s ease-in-out alternate infinite;
+                overflow: hidden;
+            }
+
+            .isotipo-left {
+                transform: translateY(-100%);
+                animation: TranslateBottom 1.5s ease-in-out forwards;
+            }
+
+            .isotipo-center {
+                transform: translateY(100%);
+                animation: TranslateTop 1s ease-in-out forwards;
+            }
+
+            .isotipo-right {
+                transform: translateY(-100%);
+                animation: TranslateBottom 2s ease-in-out forwards;
+            }
+
+            @keyframes Suspire {
+                from {
+                    transform: scale(.9);
+                }
+
+                to {
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes TranslateTop {
+                from {
+                    transform: translateY(100%);
+                }
+
+                to {
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes TranslateBottom {
+                from {
+                    transform: translateY(-100%);
+                }
+
+                to {
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes ShowColorFirst {
+                from {
+                    fill: #495057;
+                }
+
+                to {
+                    fill: #ec612f;
+                }
+            }
+
+            @keyframes ShowColorSecond {
+                from {
+                    fill: #495057;
+                }
+
+                to {
+                    fill: #7cb928;
+                }
+            }
+
+            @keyframes ShowColorThird {
+                from {
+                    fill: #495057;
+                }
+
+                to {
+                    fill: #fbba10;
+                }
+            }
+
+            @keyframes ShowColorFourth {
+                from {
+                    fill: #495057;
+                }
+
+                to {
+                    fill: #389bd7;
+                }
+            }
+        </style>
+    </defs>
+    <g class="isotipo">
+        <g class="isotipo-left">
+            <path class="color-first"
+                d="M435.26,0H33.8C15.12,0,0,18.23,0,41V298.91c0,22.67,15.12,41,33.8,41H435.26c18.65,0,33.76-18.22,33.76-41V41C469,18.23,453.91,0,435.26,0Z" />
+            <path class="color-second"
+                d="M435.26,396.45H33.8c-18.68,0-33.8,18.37-33.8,41V1182.5c0,22.64,15.12,41,33.8,41H435.26c18.65,0,33.76-18.22,33.76-41V437.42C469,414.82,453.91,396.45,435.26,396.45Z" />
+            <path class="color-third"
+                d="M435.26,1279.94H33.8c-18.68,0-33.8,18.23-33.8,41v138c0,22.64,15.12,41,33.8,41H435.26c18.65,0,33.76-18.23,33.76-41V1321C469,1298.31,453.91,1279.94,435.26,1279.94Z" />
+        </g>
+        <g class="isotipo-center">
+            <path class="color-fourth"
+                d="M950.75,0H549.29c-18.68,0-33.8,18.23-33.8,41V969.62c0,22.68,15.12,41,33.8,41H950.75c18.64,0,33.76-18.23,33.76-41V41C984.51,18.23,969.39,0,950.75,0Z" />
+            <path class="color-first"
+                d="M950.75,1067H549.29c-18.68,0-33.8,18.22-33.8,41v351c0,22.64,15.12,41,33.8,41H950.75c18.64,0,33.76-18.23,33.76-41V1108.14C984.51,1085.36,969.39,1067,950.75,1067Z" />
+        </g>
+        <g class="isotipo-right">
+            <path class="color-second"
+                d="M1466.24,0h-401.5C1046.09,0,1031,18.23,1031,41V675.09c0,22.67,15.11,41,33.76,41h401.5c18.64,0,33.76-18.23,33.76-41V41C1500,18.23,1484.88,0,1466.24,0Z" />
+            <path class="color-third"
+                d="M1466.24,772.56h-401.5c-18.65,0-33.76,18.23-33.76,41V1459c0,22.64,15.11,41,33.76,41h401.5c18.64,0,33.76-18.23,33.76-41V813.57C1500,791,1484.88,772.56,1466.24,772.56Z" />
+        </g>
+    </g>
+</svg>

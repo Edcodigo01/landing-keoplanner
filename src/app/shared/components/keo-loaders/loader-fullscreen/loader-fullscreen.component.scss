@@ -1,0 +1,170 @@
+.loader {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader--fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--base);
+    z-index: 9999;
+}
+
+.loader .logo-animated {
+    position: relative;
+    display: flex;
+    width: 150px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+    svg, img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+        object-position: center center;
+    }
+}
+
+.loader .title {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff);
+    font-size: calc(var(--fs-paragraph) + 2px);
+    font-weight: var(--fw-bold);
+    color: var(--text);
+    margin-top: 2rem;
+    opacity: .75;
+}
+
+.loader .logo-animated .cube {
+    transform-style: preserve-3d;
+    transform: rotateX(-35deg) rotateY(45deg) translateZ(0px) rotate(0deg);
+    width: 80px;
+    height: 80px;
+    animation: cubespin 4.5s ease infinite;
+}
+
+.loader .logo-animated .cube div {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+
+.loader .logo-animated .cube div:before {
+    position: absolute;
+    width: calc(80px * 1.5);
+    height: calc(80px * 1.5);
+    opacity: 1;
+    margin: auto;
+    content: '';
+    top: 80px;
+    left: 0;
+    transform-origin: 0% 0%;
+    transform: rotate(0deg);
+    animation: spinintro 4.5s ease-out infinite;
+}
+
+.loader .logo-animated .cube div:after {
+    position: absolute;
+    width: calc(80px * 1.5);
+    height: calc(80px * 1.5);
+    opacity: 1;
+    margin: auto;
+    content: '';
+    top: 80px;
+    left: -40px;
+    transform-origin: 100% 0%;
+    transform: rotate(0deg);
+    animation: spinoutro 4.5s ease-out infinite;
+}
+
+.loader .logo-animated .cube .front {
+    background: var(--medium-blue);
+    transform: rotateX(180deg) translateZ(-40px);
+}
+
+.loader .logo-animated .cube .front:before {
+    background: var(--blue);
+}
+
+.loader .logo-animated .cube .front:after {
+    background: var(--dark-blue);
+}
+
+.loader .logo-animated .cube .back {
+    background: var(--dark-blue);
+    transform: rotateX(180deg) translateZ(40px) rotate(180deg) rotateY(180deg);
+}
+
+.loader .logo-animated .cube .back:before {
+    background: var(--medium-blue);
+}
+
+.loader .logo-animated .cube .back:after {
+    background: var(--blue);
+}
+
+.loader .logo-animated .cube .right {
+    background: var(--medium-blue);
+    transform: rotateY(90deg) translateZ(40px) rotate(-90deg) rotateX(180deg);
+    display: block;
+}
+
+.loader .logo-animated .cube .right:before {
+    background: var(--medium-blue);
+}
+
+.loader .logo-animated .cube .right:after {
+    background: var(--blue);
+}
+
+.loader .logo-animated .cube .left {
+    background: var(--dark-blue);
+    transform: rotateY(-90deg) translateZ(40px) rotatex(180deg) rotate(270deg);
+}
+
+.loader .logo-animated .cube .left:before {
+    background: var(--medium-blue);
+}
+
+.loader .logo-animated .cube .left:after {
+    background: var(--blue);
+}
+
+.loader .logo-animated .cube .top {
+    background: var(--blue);
+    transform: rotateX(90deg) translateZ(40px) rotate(-90deg) rotateY(180deg);
+}
+
+.loader .logo-animated .cube .top:before {
+    background: var(--dark-blue);
+    top: calc(-80px * 1.5);
+    left: -40px;
+    transform-origin: 100% 100%;
+}
+
+.loader .logo-animated .cube .top:after {
+    background: var(--medium-blue);
+    top: 80px;
+    left: -40px;
+    transform-origin: 100% 0%;
+}
+
+.loader .logo-animated .cube .bottom {
+    background: var(--medium-blue);
+    transform: rotateX(90deg) translateZ(-40px);
+}

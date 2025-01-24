@@ -1,0 +1,51 @@
+<section class="wrapper-banner">
+    <div class="container">
+        <h1 class="title-app">Negocios</h1>
+
+        @if (business.length) {
+        <div class="keo-col-row">
+            @for (b of business; track b; let i = $index) {
+            <div class="keo-col--4 keo-col--table-4 keo-col--mobile-12">
+                <div class="business">
+                    <div class="logo">
+                        <img [src]="b.logo != null ? b.logo : 'assets/img/not-data-carita.svg'" [alt]="b.name_busi">
+                    </div>
+                    <div class="data">
+                        <h4 class="title">{{ b.name_busi }}</h4>
+                        <button type="button" [routerLink]="'/business/' + b.slug_business"
+                            class="button-app button-app--third-color">Visitar</button>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+        }
+
+        @if (!business.length) {
+        <div class="keo-col-row">
+            <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+                <div class="w-100 flex flex--column xCenter yCenter mt-2">
+                    @if (!loading) {
+                    <keo-not-register text="No hay negocios registrados."></keo-not-register>
+                    }
+                    @if (loading) {
+                    <keo-loader-base [show-loading]="true" [text]="'Cargando...'"></keo-loader-base>
+                    }
+                </div>
+            </div>
+        </div>
+        }
+
+        <div class="content-table" [style]="{ 'margin-top': '3rem !important' }">
+            <div class="pagination-footer flex xCenter yCenter mt-2">
+                <div class="paginate">
+                    <span (click)="canPreview ? '' : onClickPaginate('preview')"
+                        class="paginate-preview fi fi-br-angle-left" [class]="canPreview ? 'disabled' : ''"></span>
+                    <span class="paginate-current">{{ current }}</span>
+                    <span (click)="canNext ? '' : onClickPaginate('next')" class="paginate-next fi fi-br-angle-right"
+                        [class]="canNext ? 'disabled' : ''"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

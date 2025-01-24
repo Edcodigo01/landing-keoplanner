@@ -1,0 +1,754 @@
+{
+	"auth": {
+		"text_username_password_invalid": "Usuario o contraseña incorrectos.",
+		"form": {
+			"text_signIn": "Inicio de sesión",
+			"text_forgotPassword": "Olvidé mi contraseña",
+			"text_newpassword": "Nueva contraseña",
+			"text_forgot": "¿Olvidó su contraseña?",
+			"text_login": "Iniciar sesión",
+			"text_valid_code": "Validar código",
+			"placeholder_username": "ejemplo@mail.com",
+			"input_username": "Usuario",
+			"input_password": "Contraseña",
+			"input_confirm": "Confirmar contraseña",
+			"btn_login": "Ingresar",
+			"btn_forgotPassword": "Enviar",
+			"btn_save": "Guardar",
+			"btn_valid": "Validar",
+			"valid_pass": {
+				"p_1": "Mínimo 8 caracteres de longitud.",
+				"p_2": "Al menos una letra mayúscula.",
+				"p_3": "Al menos una letra minúscula.",
+				"p_4": "Al menos un número.",
+				"p_5": "Al menos un caracter especial ej: [.!#$'*+/=?^_-]."
+			}
+		},
+		"loader": {
+			"text_loading": "Iniciando sesión..."
+		},
+		"message": {
+			"sms_1": "Ha ocurrido un error inesperado, comuniquese con el administrador del sistema.",
+			"sms_2": "Se ha enviado un código de 6 dígitos a su correo.",
+			"sms_3": "Las contraseñas no coinciden.",
+			"sms_4": "El código que ingreso no es valido, por favor verifiqué."
+		}
+	},
+	"support": {
+		"title": "Bienvenido",
+		"business": {
+			"title": "Negocios",
+			"subtitle": "Agregue, edite y deshabilite negocios.",
+			"form": {
+				"title_add": "Crear negocio",
+				"title_edit": "Editar negocio",
+				"label_name": "Nombre",
+				"placeholder_name": "ej.hospital",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"label_name_busi": "Nombre *",
+				"placeholder_name_busi": "ej: Princesa Suit, JPA, GymNancio",
+				"label_contacto_comercial": "Contacto comercial",
+				"label_contact": "Nombre contacto *",
+				"placeholder_contact": "ej: Joe Castillo, Martín Pérez, Carlos Baute",
+				"label_email_busi": "Correo contacto *",
+				"placeholder_email_busi": "ej: ejemplo@mail.com",
+				"label_region": "Región *",
+				"select_choice": "Seleccione",
+				"label_phone": "Teléfono *",
+				"label_administrador": "Administrador",
+				"label_name_usu": "Nombre(s) *",
+				"placeholder_name_usu": "ej: Joe, Martín Alejandro",
+				"label_paternal_lastname": "Apellido paterno *",
+				"placeholder_paternal_lastname": "ej: Manrrique, Castillo",
+				"label_maternal_lastname": "Apellido materno",
+				"placeholder_maternal_lastname": "ej: Paez, Blanco",
+				"label_email": "Correo *",
+				"placeholder_email": "ej: ejemplo@mail.com",
+				"message": {
+					"sms_1": "El nombre del negocio es requerido.",
+					"sms_2": "El nombre del negocio debe tener mínimo 3 caracteres.",
+					"sms_3": "El nombre del negocio debe ser menor o igual a 100 caracteres.",
+					"sms_4": "El nombre de contacto es requerido.",
+					"sms_5": "El nombre de contacto debe tener mínimo 3 caracteres.",
+					"sms_6": "El nombre de contacto debe ser menor o igual a 120 caracteres.",
+					"sms_7": "El correo del contacto es requerido.",
+					"sms_8": "El correo del contacto no cumple con el formato ejemplo@mail.com",
+					"sms_9": "El teléfono de contacto es requerido",
+					"sms_10": "El número de teléfono que ingreso no es válido.",
+					"sms_11": "El nombre del administrador es requerido.",
+					"sms_12": "El nombre del administrador debe tener mínimo 3 caracteres.",
+					"sms_13": "El nombre del administrador debe ser menor o igual a 50 caracteres.",
+					"sms_14": "El apellido paterno del administrador es requerido.",
+					"sms_15": "El apellido paterno del administrador debe tener mínimo 3 caracteres.",
+					"sms_16": "El apellido paterno del administrador debe ser menor o igual a 50 caracteres.",
+					"sms_17": "El apellido materno del administrador debe tener mínimo 3 caracteres.",
+					"sms_18": "El apellido materno del administrador debe ser menor o igual a 50 caracteres.",
+					"sms_19": "El correo del administrador es requerido.",
+					"sms_20": "El correo del administrador no cumple con el formato ejemplo@mail.com",
+					"sms_21": "El país es requerido",
+					"sms_22": "El país debe tener mínimo 2 caracteres.",
+					"sms_23": "El país debe ser menor o igual a 100 caracteres.",
+					"sms_24": "La provincia/estado es requerida",
+					"sms_25": "La provincia/estado debe tener mínimo 2 caracteres.",
+					"sms_26": "La provincia/estado debe ser menor o igual a 100 caracteres.",
+					"sms_27": "La ciudad es requerida",
+					"sms_28": "La ciudad debe tener mínimo 2 caracteres.",
+					"sms_29": "La ciudad debe ser menor o igual a 100 caracteres.",
+					"sms_30": "El código postal es requerido",
+					"sms_31": "El código postal debe tener mínimo 2 caracteres.",
+					"sms_32": "El código postal debe ser menor o igual a 50 caracteres.",
+					"sms_33": "La Ref./Calle/Av es requerida",
+					"sms_34": "La Ref./Calle/Av debe tener mínimo 3 caracteres.",
+					"sms_35": "La Ref./Calle/Av debe ser menor o igual a 100 caracteres."
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar negocio"
+			},
+			"options": {
+				"op_1": "Agregar negocio",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name_busi": "Nombre",
+				"th_contact": "Contacto comercial",
+				"th_email_busi": "Correo",
+				"th_phone_busi": "Teléfono",
+				"th_admin_busi": "Administrador",
+				"th_email_admin_busi": "Correo admin",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"types_document": {
+			"title": "Tipos de documentos",
+			"subtitle": "Agregue, edite y deshabilite tipos de documentos.",
+			"form": {
+				"title_add": "Crear tipo de documento",
+				"title_edit": "Editar tipo de documento",
+				"label_name": "Nombre",
+				"placeholder_name": "ej.hospital",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"name_document_label": "Nombre *",
+				"name_document_place": "ej: Dni",
+				"country_label": "Pais *",
+				"type_document_label": "Tipo de documento *",
+				"placeholder_document_label": "Placeholder",
+				"placeholder_document_place": "ej: XX.XXX.XXX",
+				"regex_label": "Expresión/Regular *",
+				"mask_document_label": "Mascaras *"
+			},
+			"tooltip": {
+				"t_edit": "Editar tipo de documento"
+			},
+			"options": {
+				"op_1": "Agregar tipo de documento",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name_document": "Nombre",
+				"th_country": "País",
+				"th_regex": "Expresión/Regular",
+				"th_mask_document": "Mascara",
+				"th_placeholder_document": "Placeholder",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"types_phone": {
+			"title": "Tipos de teléfono",
+			"subtitle": "Agregue, edite y deshabilite tipos de teléfono.",
+			"form": {
+				"title_add": "Crear tipo de teléfono",
+				"title_edit": "Editar tipo de teléfono",
+				"label_name": "Nombre",
+				"placeholder_name": "ej.hospital",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"type_phone_label": "Tipo de teléfono *",
+				"code_phone_label": "Código/País *",
+				"name_label": "Nombre *",
+				"placeholder_label": "Placeholder *",
+				"placeholder_place": "ej: +00 000-000-0000",
+				"regex_label": "Expresión/Regular *",
+				"mask_label": "Mascaras *"
+			},
+			"tooltip": {
+				"t_edit": "Editar tipo de teléfono"
+			},
+			"options": {
+				"op_1": "Agregar tipo de teléfono",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name": "Nombre",
+				"th_country_format_p": "País",
+				"th_code_format_p": "Código",
+				"th_regex_format_p": "Expresión/Regular",
+				"th_mask": "Mascara",
+				"th_placeholder_document": "Placeholder",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"types_currency": {
+			"title": "Tipos de moneda",
+			"subtitle": "Agregue, edite y deshabilite tipos de moneda.",
+			"form": {
+				"title_add": "Crear tipo de moneda",
+				"title_edit": "Editar tipo de moneda",
+				"label_name": "Nombre",
+				"placeholder_name": "ej.hospital",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"code_cu_label": "Código moneda *",
+				"code_cu_place": "ej: VES|COP|CLP",
+				"country_cu_label": "País *",
+				"placeholder_cu_label": "Placeholder *",
+				"placeholder_cu_place": "ej: XX.XXX.XXX",
+				"regex_cu_label": "Expresión/Regular *",
+				"mask_cu_label": "Mascaras *"
+			},
+			"tooltip": {
+				"t_edit": "Editar tipo de moneda"
+			},
+			"options": {
+				"op_1": "Agregar tipo de moneda",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_code_cu": "Código moneda",
+				"th_country_cu": "País",
+				"th_mask_cu": "Mascara",
+				"th_placeholder_cu": "Placeholder",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"payment_method": {
+			"title": "Métodos de pago",
+			"subtitle": "Agregue, edite y deshabilite métodos de pago.",
+			"form": {
+				"title_add": "Crear método de pago",
+				"title_edit": "Editar método de pago",
+				"label_name": "Nombre",
+				"placeholder_name": "ej.hospital",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar método de pago"
+			},
+			"options": {
+				"op_1": "Agregar método de pago",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name_method": "Nombre",
+				"th_country_method": "País",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"reference_code": {
+			"title": "Embajadores",
+			"subtitle": "Agregue, edite y deshabilite embajadores.",
+			"form": {
+				"title_add": "Crear embajador",
+				"title_edit": "Editar embajador",
+				"label_name": "Nombre",
+				"placeholder_name": "ej.hospital",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				}
+			}
+		}
+	},
+	"administrator": {
+		"title": "Bienvenido",
+		"professionals": {
+			"title": "Profesionales",
+			"subtitle": "Agregue y edite profesionales.",
+			"form": {
+				"title_add": "Crear profesional",
+				"title_edit": "Editar profesional",
+				"label_name": "Nombre",
+				"placeholder_name": "ej. Luis",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"label_document": "Tipo de documento",
+				"label_dni": "Documento de identidad",
+				"label_region": "Región *",
+				"select_choice": "Seleccione",
+				"label_phone": "Teléfono *",
+				"placeholder_phone": "ej: +58 000-000-0000",
+				"label_empleado": "Profesional",
+				"label_name_usu": "Nombre(s) *",
+				"placeholder_name_usu": "ej: Joe, Martín Alejandro",
+				"label_paternal_lastname": "Apellido paterno *",
+				"placeholder_paternal_lastname": "ej: Manrrique, Castillo",
+				"label_maternal_lastname": "Apellido materno",
+				"placeholder_maternal_lastname": "ej: Paez, Blanco",
+				"label_email": "Correo *",
+				"placeholder_email": "ej: ejemplo@mail.com",
+				"message": {
+					"sms_7": "El documento es requerido",
+					"sms_8": "El documento que ingreso no es válido.",
+					"sms_9": "El teléfono del contacto es requerido",
+					"sms_10": "El número de teléfono que ingreso no es válido.",
+					"sms_11": "El nombre del profesional es requerido.",
+					"sms_12": "El nombre del profesional debe tener mínimo 3 caracteres.",
+					"sms_13": "El nombre del profesional debe ser menor o igual a 50 caracteres.",
+					"sms_14": "El apellido paterno del profesional es requerido.",
+					"sms_15": "El apellido paterno del profesional debe tener mínimo 3 caracteres.",
+					"sms_16": "El apellido paterno del profesional debe ser menor o igual a 50 caracteres.",
+					"sms_17": "El apellido materno del profesional debe tener mínimo 3 caracteres.",
+					"sms_18": "El apellido materno del profesional debe ser menor o igual a 50 caracteres.",
+					"sms_19": "El correo del profesional es requerido.",
+					"sms_20": "El correo del profesional no cumple con el formato ejemplo@mail.com"
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar profesional"
+			},
+			"options": {
+				"op_1": "Agregar profesional",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name_complete": "Nombre",
+				"th_dni": "Documento",
+				"th_phone": "Teléfono",
+				"th_email": "Correo profesional",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"clients": {
+			"title": "Clientes",
+			"subtitle": "Edite clientes.",
+			"form": {
+				"title_add": "Crear cliente",
+				"title_edit": "Editar cliente",
+				"label_name": "Nombre",
+				"placeholder_name": "ej. Luis",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"label_document": "Tipo de documento",
+				"label_dni": "Documento de identidad",
+				"label_region": "Región *",
+				"select_choice": "Seleccione",
+				"label_phone": "Teléfono *",
+				"placeholder_phone": "ej: +58 000-000-0000",
+				"label_empleado": "Cliente",
+				"label_name_usu": "Nombre(s) *",
+				"placeholder_name_usu": "ej: Joe, Martín Alejandro",
+				"label_paternal_lastname": "Apellido paterno *",
+				"placeholder_paternal_lastname": "ej: Manrrique, Castillo",
+				"label_maternal_lastname": "Apellido materno",
+				"placeholder_maternal_lastname": "ej: Paez, Blanco",
+				"label_email": "Correo *",
+				"placeholder_email": "ej: ejemplo@mail.com",
+				"message": {
+					"sms_7": "El documento es requerido",
+					"sms_8": "El documento que ingreso no es válido.",
+					"sms_9": "El teléfono del contacto es requerido",
+					"sms_10": "El número de teléfono que ingreso no es válido.",
+					"sms_11": "El nombre del cliente es requerido.",
+					"sms_12": "El nombre del cliente debe tener mínimo 3 caracteres.",
+					"sms_13": "El nombre del cliente debe ser menor o igual a 50 caracteres.",
+					"sms_14": "El apellido paterno del cliente es requerido.",
+					"sms_15": "El apellido paterno del cliente debe tener mínimo 3 caracteres.",
+					"sms_16": "El apellido paterno del cliente debe ser menor o igual a 50 caracteres.",
+					"sms_17": "El apellido materno del cliente debe tener mínimo 3 caracteres.",
+					"sms_18": "El apellido materno del cliente debe ser menor o igual a 50 caracteres.",
+					"sms_19": "El correo del cliente es requerido.",
+					"sms_20": "El correo del cliente no cumple con el formato ejemplo@mail.com"
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar cliente"
+			},
+			"options": {
+				"op_1": "Agregar cliente",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name_complete": "Nombre",
+				"th_dni": "Documento",
+				"th_phone": "Teléfono",
+				"th_email": "Correo cliente",
+				"th_created_at_format": "Creación",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"categories": {
+			"title": "Categorías",
+			"subtitle": "Agregue, edite y elimine categorías.",
+			"form": {
+				"title_add": "Crear categoría",
+				"title_edit": "Editar categoría",
+				"label_name": "Nombre",
+				"placeholder_name": "ej. Luis",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"message": {
+					"sms_1": "El nombre de la categoría es requerido.",
+					"sms_2": "El nombre de la categoría debe tener mínimo 3 caracteres.",
+					"sms_3": "El nombre de la categoría debe ser menor o igual a 100 caracteres."
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar categoría"
+			},
+			"options": {
+				"op_1": "Agregar categoría",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name": "Nombre",
+				"th_services": "Servicios",
+				"th_created_at_format": "Creación",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"forms": {
+			"title": "Formularios",
+			"subtitle": "Agregue, edite y elimine formularios.",
+			"form": {
+				"title_add": "Crear formulario",
+				"title_edit": "Editar formulario",
+				"label_name": "Nombre",
+				"placeholder_name": "ej. Luis",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"message": {
+					"sms_1": "El nombre del formulario es requerido.",
+					"sms_2": "El nombre del formulario debe tener mínimo 3 caracteres.",
+					"sms_3": "El nombre del formulario debe ser menor o igual a 100 caracteres."
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar formulario",
+				"t_eliminar": "Eliminar formulario"
+			},
+			"options": {
+				"op_1": "Agregar formulario",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name_formulario": "Nombre del formulario",
+				"th_services": "Servicios",
+				"th_created_at_format": "Creación",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"inventory": {
+			"title": "Inventario",
+			"subtitle": "",
+			"form": {
+				"title_add": "Crear Producto / Servicio",
+				"title_edit": "Editar Producto / Servicio",
+				"label_name": "Nombre",
+				"placeholder_name": "ej. Luis",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"message": {
+					"sms_1": "El nombre del producto / servicio es requerido.",
+					"sms_2": "El nombre del producto / servicio debe tener mínimo 3 caracteres.",
+					"sms_3": "El nombre del producto / servicio debe ser menor o igual a 100 caracteres."
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar Producto / Servicio",
+				"t_eliminar": "Eliminar Producto / Servicio"
+			},
+			"options": {
+				"op_1": "Agregar Producto / Servicio",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name": "Nombre",
+				"th_price": "Precio",
+				"th_quantity": "Inventario",
+				"th_created_at_format": "Creación",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		},
+		"payments": {
+			"title": "Pagos",
+			"subtitle": "",
+			"form": {
+				"title_add": "Crear categoría",
+				"title_edit": "Editar categoría",
+				"label_name": "Nombre",
+				"placeholder_name": "ej. Luis",
+				"label_estado": "Estado",
+				"select_estado": {
+					"op_1": "Todos",
+					"op_2": "Pendiente",
+					"op_3": "Aprobado",
+					"op_4": "Cancelado",
+					"op_5": "Rechazado"
+				}
+			},
+			"tooltip": {
+				"t_aprobado": "Aprobar",
+				"t_rechazado": "Rechazar",
+				"t_show_voucher": "Ver comprobante"
+			},
+			"table": {
+				"th_name_client": "Nombre del cliente",
+				"th_n_transaction": "N° Transacción",
+				"th_amount_transaction": "Monto de la transacción",
+				"th_actions": "Acciones"
+			}
+		}
+	},
+	"employee": {
+		"quotes": {
+			"title": "Negocios",
+			"subtitle": "Agregue y edite negocios.",
+			"form": {
+				"title_add": "Crear negocio",
+				"title_edit": "Editar negocio",
+				"label_name": "Nombre",
+				"placeholder_name": "ej.hospital",
+				"label_vigencia": "Vigencia",
+				"select_vigencia": {
+					"op_1": "Todos",
+					"op_2": "Vigente",
+					"op_3": "No vigente"
+				},
+				"label_name_busi": "Nombre *",
+				"placeholder_name_busi": "ej: Princesa Suit, JPA, GymNancio",
+				"label_contacto_comercial": "Contacto comercial",
+				"label_contact": "Nombre contacto *",
+				"placeholder_contact": "ej: Joe Castillo, Martín Pérez, Carlos Baute",
+				"label_email_busi": "Correo contacto *",
+				"placeholder_email_busi": "ej: ejemplo@mail.com",
+				"label_region": "Región *",
+				"select_choice": "Seleccione",
+				"label_phone": "Teléfono *",
+				"label_administrador": "Administrador",
+				"label_name_usu": "Nombre(s) *",
+				"placeholder_name_usu": "ej: Joe, Martín Alejandro",
+				"label_paternal_lastname": "Apellido paterno *",
+				"placeholder_paternal_lastname": "ej: Manrrique, Castillo",
+				"label_maternal_lastname": "Apellido materno",
+				"placeholder_maternal_lastname": "ej: Paez, Blanco",
+				"label_email": "Correo *",
+				"placeholder_email": "ej: ejemplo@mail.com",
+				"message": {
+					"sms_1": "El nombre del negocio es requerido.",
+					"sms_2": "El nombre del negocio debe tener mínimo 3 caracteres.",
+					"sms_3": "El nombre del negocio debe ser menor o igual a 100 caracteres.",
+					"sms_4": "El nombre de contacto es requerido.",
+					"sms_5": "El nombre de contacto debe tener mínimo 3 caracteres.",
+					"sms_6": "El nombre de contacto debe ser menor o igual a 120 caracteres.",
+					"sms_7": "El correo del contacto es requerido.",
+					"sms_8": "El correo del contacto no cumple con el formato ejemplo@mail.com",
+					"sms_9": "El teléfono de contacto es requerido",
+					"sms_10": "El número de teléfono que ingreso no es válido.",
+					"sms_11": "El nombre del administrador es requerido.",
+					"sms_12": "El nombre del administrador debe tener mínimo 3 caracteres.",
+					"sms_13": "El nombre del administrador debe ser menor o igual a 50 caracteres.",
+					"sms_14": "El apellido paterno del administrador es requerido.",
+					"sms_15": "El apellido paterno del administrador debe tener mínimo 3 caracteres.",
+					"sms_16": "El apellido paterno del administrador debe ser menor o igual a 50 caracteres.",
+					"sms_17": "El apellido materno del administrador debe tener mínimo 3 caracteres.",
+					"sms_18": "El apellido materno del administrador debe ser menor o igual a 50 caracteres.",
+					"sms_19": "El correo del administrador es requerido.",
+					"sms_20": "El correo del administrador no cumple con el formato ejemplo@mail.com",
+					"sms_21": "El país es requerido",
+					"sms_22": "El país debe tener mínimo 2 caracteres.",
+					"sms_23": "El país debe ser menor o igual a 100 caracteres.",
+					"sms_24": "La provincia/estado es requerida",
+					"sms_25": "La provincia/estado debe tener mínimo 2 caracteres.",
+					"sms_26": "La provincia/estado debe ser menor o igual a 100 caracteres.",
+					"sms_27": "La ciudad es requerida",
+					"sms_28": "La ciudad debe tener mínimo 2 caracteres.",
+					"sms_29": "La ciudad debe ser menor o igual a 100 caracteres.",
+					"sms_30": "El código postal es requerido",
+					"sms_31": "El código postal debe tener mínimo 2 caracteres.",
+					"sms_32": "El código postal debe ser menor o igual a 50 caracteres.",
+					"sms_33": "La Ref./Calle/Av es requerida",
+					"sms_34": "La Ref./Calle/Av debe tener mínimo 3 caracteres.",
+					"sms_35": "La Ref./Calle/Av debe ser menor o igual a 100 caracteres."
+				}
+			},
+			"tooltip": {
+				"t_edit": "Editar negocio"
+			},
+			"options": {
+				"op_1": "Agregar negocio",
+				"op_2": "Exportar listado"
+			},
+			"table": {
+				"th_name_busi": "Nombre",
+				"th_contact": "Contacto comercial",
+				"th_email_busi": "Correo",
+				"th_phone_busi": "Teléfono",
+				"th_admin_busi": "Administrador",
+				"th_email_admin_busi": "Correo admin",
+				"th_is_active": "Vigencia",
+				"th_actions": "Acciones"
+			}
+		}
+	},
+	"shared": {
+		"buttons": {
+			"btn_accept": "Aceptar",
+			"btn_save": "Guardar",
+			"btn_update": "Actualizar",
+			"btn_next": "Siguiente",
+			"btn_reschedule": "Reagendar",
+			"btn_back": "Anterior",
+			"btn_add": "Agregar",
+			"btn_close": "Cerrar",
+			"btn_cancel": "Cancelar",
+			"btn_clear": "Limpiar",
+			"btn_deferred_export": "Exportación Diferida",
+			"btn_delete": "Eliminar",
+			"btn_edit": "Editar",
+			"btn_verificate": "Verificar",
+			"btn_export": "Exportar",
+			"btn_print": "Imprimir",
+			"btn_refresh": "Refrescar",
+			"btn_reject": "Rechazar",
+			"btn_resend": "Reenviar",
+			"btn_upload": "Subir",
+			"btn_create": "Crear",
+			"btn_search": "Buscar",
+			"btn_send": "Enviar CEN",
+			"btn_setting_book": "Generar Libro",
+			"btn_show_document": "Ver Documentos",
+			"btn_xml": "Descargar XML"
+		},
+		"message": {
+			"success": "Exitoso",
+			"fail": "Fallido",
+			"success_contact": "Gracias por confiar en nosotros, te contactaremos a la brevedad",
+			"fail_contact": "Algo no salió bien, vuelve a intentarlo",
+			"not_available": "No está disponible."
+		},
+		"i18n": {
+			"languageSelector": {
+				"chooseLanguage": "Cambiar lenguaje",
+				"language": {
+					"english": "Inglés",
+					"spanish": "Español"
+				}
+			}
+		},
+		"notification": {
+			"all_notification": "Todas las notificaciones",
+			"not_notification": "Sin notificaciones",
+			"show_certifcated": "Ver certificados cargados",
+			"title": "Notificaciones"
+		},
+		"table": {
+			"actions": "Acciones",
+			"editable": {
+				"tableFieldTypeYesNo": {
+					"no": "No",
+					"yes": "Si"
+				}
+			},
+			"info": "Mostrando&nbsp;<b>#{start}</b>&nbsp;de&nbsp;<b>#{end}</b>&nbsp;de&nbsp;<b>#{total}</b>&nbsp;registros",
+			"lengthMenuEntries": "registros",
+			"lengthMenuShow": "Mostrar",
+			"no_records_available": "No hay registros disponibles"
+		},
+		"loader": {
+			"text_loading": "Loading please wait..."
+		},
+		"validation": {
+			"allowExtensions": "Seleccione un archivo con una extensión aceptada (#{requiredExtensions}).",
+			"email": "Por favor, escribe una dirección de correo válida.",
+			"isEmail": "Por favor, escribe una dirección de correo válida.",
+			"isPhone": "Por favor, escribe un telefono válido.",
+			"isURL": "Por favor, escribe una URL válida.",
+			"max": "Por favor, escriba un valor menor o igual a #{max}.",
+			"maxlength": "Por favor, no escriba menos de #{requiredLength} caracteres.",
+			"min": "Por favor, escriba un valor mayor o igual a #{min}.",
+			"minlength": "Por favor, no escriba menos de #{requiredLength} caracteres.",
+			"nullValidator": "Este campo es obligatorio.",
+			"pattern": "Formato inválido.",
+			"required": "Este campo es obligatorio.",
+			"requiredFile": "Este archivo es obligatorio.",
+			"requiredTrue": "Este campo debe ser verdadero.",
+			"rut": "Por favor, escribe un RUT válido."
+		},
+		"rols": {
+			"r_1": "Soporte",
+			"r_2": "Administrador",
+			"r_3": "Profesional"
+		},
+		"navbar": {
+			"nav": {
+				"op_1": "Inicio",
+				"op_2": "Negocios",
+				"op_3": "Perfil",
+				"op_4": "Cambiar contraseña",
+				"op_5": "Cerrar sesión"
+			}
+		},
+		"sidebar": {
+			"profile": {
+				"op_1": "Perfil",
+				"op_2": "Cambiar contraseña",
+				"op_3": "Cerrar sesión"
+			}
+		}
+	}
+}

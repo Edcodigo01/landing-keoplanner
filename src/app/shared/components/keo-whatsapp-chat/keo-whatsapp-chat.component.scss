@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+.keo-whatsapp-chat {
+    --kwc-first-color: #2db742;
+    --kwc-second-color: #f7f7f7;
+    --kwc-third-color: #202020;
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 1.65rem;
+    bottom: 1.65rem;
+    z-index: 100;
+
+    @media only screen and (max-width: 767px) {
+        right: 1.25rem;
+        bottom: 1.25rem;
+    }
+
+    &--chat {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background: transparent;
+        border-radius: 16px;
+        width: 320px;
+        height: max-content;
+        border: 1px solid var(--kwc-first-color);
+        border-radius: 10px;
+        overflow: hidden;
+
+        @media only screen and (max-width: 767px) {
+            width: calc(100vw - (1.25rem * 2));
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: max-content;
+            padding: 0.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background: var(--kwc-first-color);
+            color: var(--kwc-second-color);
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+            .title {
+                font-size: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+                color: inherit;
+                margin: 0;
+                width: 100%;
+                height: max-content;
+                padding: .5rem;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 300;
+                color: inherit;
+                margin: 0;
+                width: 100%;
+                height: max-content;
+                padding: 0 .5rem .5rem;
+                opacity: .75;
+            }
+
+            .kwc-close-button {
+                position: absolute;
+                top: .75rem;
+                right: .75rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 28px;
+                height: 28px;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                z-index: 1;
+                cursor: pointer;
+
+                .kwc-icon-close {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    width: 16px;
+                    fill: var(--kwc-second-color);
+                }
+            }
+        }
+
+        .body {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: max-content;
+            padding: .5rem;
+            background: #f7f7f7;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+            .text-help {
+                font-size: 13px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+                color: var(--kwc-third-color);
+                background: rgba(0, 0, 0, .065);
+                padding: .5rem;
+                border-radius: 8px;
+                text-align: center;
+                width: 100%;
+                margin: 0 0 .5rem;
+
+                &.err {
+                    margin: 0;
+                    color: #ff5151;
+                    background: #ffdada;
+                }
+            }
+
+            .form {
+                display: block;
+                width: 100%;
+                height: max-content;
+
+                .kwc-form-control {
+                    display: block;
+                    font-size: 14px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 400;
+                    width: 100%;
+                    height: 150px;
+                    min-height: 150px;
+                    max-height: 150px;
+                    resize: none;
+                    border: none;
+                    background: #ffffff;
+                    border-radius: 10px;
+                    padding: .5rem;
+                }
+
+                .kwc-send {
+                    display: block;
+                    width: max-content;
+                    height: max-content;
+                    margin: .5rem auto 0;
+                    padding: .5rem .75rem;
+                    background: var(--kwc-first-color);
+                    color: var(--kwc-second-color);
+                    border-radius: 8px;
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                    cursor: pointer;
+
+                    &:disabled {
+                        color: rgb(160, 160, 160) !important;
+                        background: rgba(0, 0, 0, .065) !important;
+                        cursor: not-allowed !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &--button {
+        position: relative;
+        display: block;
+        width: 56px;
+        height: 56px;
+        line-height: 60px;
+        border-radius: 14px;
+        padding: 0;
+        background: var(--kwc-first-color);
+        color: var(--kwc-second-color);
+        border: none;
+        box-shadow: none;
+        outline: none !important;
+        cursor: pointer;
+
+        .kwc-icon-whatsapp {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--kwc-second-color);
+            font-size: 32px;
+        }
+    }
+
+    &--chat,
+    &--button {
+        transform: translateY(calc(100% + 1.65rem));
+        transition: transform .25s ease-in-out;
+
+        &.show {
+            transform: translateY(0);
+        }
+    }
+
+    &.kwcStatic {
+        position: relative;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        right: initial;
+        bottom: initial;
+        z-index: 0;
+        
+        .keo-whatsapp-chat--chat, .keo-whatsapp-chat--button {
+            position: relative;
+            transform: translateY(0);
+        }
+
+        .keo-whatsapp-chat--chat {
+            margin-bottom: 1rem;
+
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.not-link {
+    text-decoration: none;
+}

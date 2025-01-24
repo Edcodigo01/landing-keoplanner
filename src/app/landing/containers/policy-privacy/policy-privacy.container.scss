@@ -1,0 +1,43 @@
+.wrapper-docx {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: max-content;
+    min-height: calc(100% - 305px);
+    padding: 4rem 1rem;
+    background: var(--base-alt);
+}
+
+.title-app {
+    width: 100%;
+    margin: 0 0 3rem;
+    font-size: calc(var(--fs-title) + 4px);
+    text-align: center;
+}
+
+.subtitle {
+    margin: 1rem 0;
+    padding: 0;
+    width: 100%;
+    font-family: var(--ff);
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-bold);
+    color: var(--text);
+    opacity: .9;
+}
+
+.description {
+    margin: 0 0 .25rem;
+    padding: 0;
+    width: 100%;
+    font-family: var(--ff);
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-regular);
+    color: var(--text);
+    opacity: .8;
+}
+
+.link-app {
+    color: var(--first-color);
+    text-decoration: none;
+}

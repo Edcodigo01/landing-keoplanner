@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1104 1229.24">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #9ac443;
+            }
+
+            .cls-4 {
+                fill: #bbd473;
+            }
+
+            .cls-5 {
+                clip-path: url(#clip-path-2);
+            }
+
+            .cls-6 {
+                fill: #e84b1f;
+            }
+
+            .cls-7 {
+                fill: #f1896c;
+            }
+
+            .cls-8 {
+                fill: #5b5756;
+            }
+
+            .cls-9 {
+                clip-path: url(#clip-path-3);
+            }
+
+            .cls-10 {
+                fill: #a4c742;
+            }
+
+            .cls-11 {
+                fill: #81b731;
+            }
+
+            .animate-zoom {
+                transform-origin: 50% 50%;
+                opacity: 0;
+                animation: opacity 2s infinite alternate;
+            }
+
+            .animate-zoom--1 {
+                animation-duration: 1.5s;
+            }
+
+            .animate-zoom--2 {
+                animation-duration: 2.5s;
+            }
+
+            .animate-zoom--3 {
+                animation-duration: 1.5s;
+            }
+
+            .animate-zoom--4 {
+                animation-duration: 1.1s;
+            }
+
+            .animate-zoom--5 {
+                animation-duration: 1.68s;
+            }
+
+            .animate-zoom--6 {
+                animation-duration: 2s;
+            }
+
+            .animate-zoom--7 {
+                animation-duration: 1s;
+            }
+
+            .animate-zoom--8 {
+                animation-duration: 1.35s;
+            }
+
+            .animate-zoom--9 {
+                animation-duration: 1.95s;
+            }
+
+            .animate-campaneo {
+                transform-origin: 50% 0;
+                transform: rotate(0deg);
+                animation: campana 1.5s ease-in-out infinite alternate;
+            }
+
+            @keyframes opacity {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .animate-cara {
+                transform-origin: bottom center;
+                transform: rotateZ(0deg);
+                animation: cara 1s ease-in-out infinite alternate;
+            }
+
+            @keyframes cara {
+                from {
+                    transform: rotate(-5deg);
+                }
+
+                to {
+                    transform: rotate(5deg);
+                }
+            }
+
+            .animate-sombra {
+                transform-origin: bottom center;
+                transform: translateX(0px);
+                animation: sombra 1s ease-in-out infinite alternate;
+            }
+
+            @keyframes sombra {
+                from {
+                    transform: translateX(-10px);
+                }
+
+                to {
+                    transform: translateX(10px);
+                }
+            }
+
+            .pelo-1,
+            .pelo-2,
+            .pelo-3 {
+                transform-origin: inherit;
+            }
+
+            .pelo-2 {
+                transform: translate(-50.97px, 272.02px) rotate(-33.21deg);
+            }
+
+            .pelo-3 {
+                transform: translate(1111.88px, 1025.74px) rotate(-146.79deg);
+            }
+        </style>
+        <clipPath id="clip-path" transform="translate(81.49)">
+            <circle class="cls-1" cx="95.57" cy="283.04" r="95.57" />
+        </clipPath>
+        <clipPath id="clip-path-2" transform="translate(81.49)">
+            <circle class="cls-1" cx="778.09" cy="145.31" r="76.91" />
+        </clipPath>
+        <clipPath id="clip-path-3" transform="translate(81.49)">
+            <circle class="cls-1" cx="528.99" cy="831.21" r="312.01" />
+        </clipPath>
+    </defs>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="carita">
+            <g id="esfera" class="animate-zoom animate-zoom--1">
+                <g class="cls-2">
+                    <circle class="cls-3" cx="174.35" cy="283.68" r="95.57" />
+                    <ellipse class="cls-4" cx="95.57" cy="283.04" rx="95.57" ry="91.09" />
+                </g>
+            </g>
+            <g id="esfera-2" class="animate-zoom animate-zoom--3">
+                <g class="cls-5">
+                    <circle class="cls-6" cx="857.39" cy="145.82" r="76.91" />
+                    <ellipse class="cls-7" cx="794" cy="145.31" rx="76.91" ry="73.3" />
+                </g>
+            </g>
+            <g id="equis" class="animate-zoom animate-zoom--9">
+                <rect class="cls-7" x="320.29" y="-15.92" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(232.48 -227.72) rotate(45)" />
+                <rect class="cls-7" x="320.29" y="-15.92" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(727.98 -130.98) rotate(135)" />
+            </g>
+            <g id="equis-2" class="animate-zoom animate-zoom--6">
+                <rect class="cls-7" x="924.03" y="242.45" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(592.01 -578.95) rotate(45)" />
+                <rect class="cls-7" x="924.03" y="242.45" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(1941.32 -116.81) rotate(135)" />
+            </g>
+            <rect id="pelo-1" class="cls-4 pelo-1 animate-zoom animate-zoom--8" x="583.2" y="252.54" width="52.91" height="133.12" rx="26.45" />
+            <rect id="pelo-2" class="cls-4 pelo-2 animate-zoom animate-zoom--2" x="363.47" y="291.58" width="52.91" height="133.12" rx="26.45" />
+            <rect id="pelo-3" class="cls-4 pelo-3 animate-zoom animate-zoom--6" x="641.66" y="292.7" width="52.91" height="133.12" rx="26.45" />
+            <ellipse id="sombra" class="cls-8 animate-sombra" cx="610.48" cy="1129.4" rx="338.11" ry="99.84" />
+            <g id="cara" class="animate-cara">
+                <g class="cls-9">
+                    <circle class="cls-3" cx="610.48" cy="831.21" r="312.01" />
+                    <circle class="cls-10" cx="489.98" cy="831.21" r="312.01" />
+                </g>
+                <circle id="ojo-derecho" class="cls-11" cx="462.62" cy="797.98" r="27.04" />
+                <circle id="ojo-izquierdo" class="cls-11" cx="758.46" cy="797.98" r="27.04" />
+                <rect id="boca" class="cls-11" x="506.4" y="890.41" width="196.91" height="44.8" rx="22.4" />
+            </g>
+        </g>
+    </g>
+</svg>

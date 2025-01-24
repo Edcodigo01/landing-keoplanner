@@ -1,0 +1,27 @@
+@defer {
+<div class="wrapper-login">
+  <div class="wrapper-login--left">
+    <div class="keo-col-row">
+      <div class="keo-col--12">
+        <img class="logo-login" src="assets/img/planner/logo.svg" alt="logo | https://keoplanner.com">
+      </div>
+      <div class="keo-col--12">
+        <h3 class="title-app">Aumenta el crecimiento de tu negocio con el <span
+            [ngStyle]="{ color: 'var(--first-color)' }">nuevo</span> sistema de reservas online.</h3>
+      </div>
+      <div class="keo-col--12">
+        <p class="subtitle-app"><strong>Planner</strong> ayuda a pequeñas y medianas empresas a optimizar su tiempo y
+          recursos, es la agenda digital que organiza las reservas online de manera automática mientras enfocas tu
+          atención en otros aspectos claves de tu negocio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-login--right">
+    @if ((authService.showBackButtom | async)) {
+    <span (click)="back()" class="volver-panel-soporte fa fa-angle-left"></span>
+    }
+    <router-outlet></router-outlet>
+    <p-toast position="top-right"></p-toast>
+  </div>
+</div>
+}

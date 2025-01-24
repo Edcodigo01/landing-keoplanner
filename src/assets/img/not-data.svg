@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1714.58 1798.79">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+            }
+
+            .cls-2 {
+                fill: #b9acac;
+            }
+
+            .cls-3 {
+                fill: #9e9797;
+            }
+
+            .cls-4 {
+                fill: #757171;
+            }
+
+            .cls-5 {
+                fill: #5b5756;
+            }
+
+            .cls-6 {
+                fill: #e84b1e;
+            }
+
+            .cls-7 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-8 {
+                fill: #f2896c;
+            }
+
+            .cls-9 {
+                clip-path: url(#clip-path-2);
+            }
+
+            .cls-10 {
+                fill: #f7f3f0;
+            }
+
+            .cls-11 {
+                clip-path: url(#clip-path-3);
+            }
+
+            .cls-12 {
+                fill: #9ac443;
+            }
+
+            .cls-13 {
+                fill: #bbd473;
+            }
+
+            .cls-14 {
+                clip-path: url(#clip-path-4);
+            }
+
+            .cls-15 {
+                fill: #e84b1e;
+            }
+
+            .cls-16 {
+                fill: #f2896c;
+            }
+
+            .cls-17 {
+                fill: #f2896c;
+            }
+
+            .cls-18 {
+                clip-path: url(#clip-path-5);
+            }
+
+            .cls-19 {
+                fill: #a4c742;
+            }
+
+            .cls-20 {
+                fill: #81b731;
+            }
+
+            .animate-zoom {
+                transform-origin: 50% 50%;
+                opacity: 0;
+                animation: opacity 2s infinite alternate;
+            }
+
+            .animate-zoom--1 {
+                animation-duration: 1.5s;
+            }
+
+            .animate-zoom--2 {
+                animation-duration: 2.5s;
+            }
+
+            .animate-zoom--3 {
+                animation-duration: 1.5s;
+            }
+
+            .animate-zoom--4 {
+                animation-duration: 1.1s;
+            }
+
+            .animate-zoom--5 {
+                animation-duration: 1.68s;
+            }
+
+            .animate-zoom--6 {
+                animation-duration: 2s;
+            }
+
+            .animate-zoom--7 {
+                animation-duration: 1s;
+            }
+
+            .animate-zoom--8 {
+                animation-duration: 1.35s;
+            }
+
+            .animate-zoom--9 {
+                animation-duration: 1.95s;
+            }
+
+            .animate-campaneo {
+                transform-origin: 50% 0;
+                transform: rotate(0deg);
+                animation: campana 1.5s ease-in-out infinite alternate;
+            }
+
+            @keyframes opacity {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .animate-cara {
+                transform-origin: center;
+                transform: rotateZ(0deg);
+                animation: cara 1s ease-in-out infinite alternate;
+            }
+
+            @keyframes cara {
+                from {
+                    transform: rotate(-5deg);
+                }
+
+                to {
+                    transform: rotate(5deg);
+                }
+            }
+
+            .animate-sombra {
+                transform-origin: center;
+                transform: translateX(0px);
+                animation: sombra 1s ease-in-out infinite alternate;
+            }
+
+            @keyframes sombra {
+                from {
+                    transform: translateX(-10px);
+                }
+
+                to {
+                    transform: translateX(10px);
+                }
+            }
+
+            .pelo-1,
+            .pelo-2,
+            .pelo-3 {
+                transform-origin: inherit;
+            }
+
+            .pelo-2 {
+                transform: translate(-77.81px, 451.97px) rotate(-33.21deg);
+            }
+
+            .pelo-3 {
+                transform: translate(1633.91px, 1205.69px) rotate(-146.79deg);
+            }
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="1367.8" y="1314.3" width="177.55" height="484.48" />
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <rect class="cls-1" y="1314.3" width="1456.57" height="484.48" />
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <circle class="cls-1" cx="424.16" cy="283.04" r="95.57" />
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <circle class="cls-1" cx="1106.68" cy="145.31" r="76.91" />
+        </clipPath>
+        <clipPath id="clip-path-5">
+            <circle class="cls-1" cx="857.58" cy="831.21" r="312.01" />
+        </clipPath>
+    </defs>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="bandeja">
+            <path class="cls-2"
+                d="M1.71,1358.46s-.86-49.92,13.22-92.58L231.26,607.52s9.38-32.42,39.25-35H1437.88s36.69,0,47.78,38.82l221.66,672.22s10.24,25.6,6.4,70.4l-122.88,87.68-358.4,206.73-462.73-25L257.07,1562Z" />
+            <polygon class="cls-3"
+                points="316.16 870.35 312.75 572.54 1401.4 572.54 1399.05 870.35 1223.69 952.27 968.71 1040.23 495.79 1011.58 316.16 870.35" />
+            <path class="cls-4"
+                d="M168.11,1314.3l141.44-425s9.6-41.6,48-42.24H1367.8s27.41,6.61,38.08,41.17l140.37,426-169,120.11-174.08,108.8-713.39,7.26Z" />
+            <path class="cls-5"
+                d="M1204.92,845.82s32-.37,48.64,53.57l135,414.27,40.32,60.8,130.56-19.84-13.44-41-140.16-428.8s-13.44-38.4-40.32-39Z" />
+            <path class="cls-6"
+                d="M0,1358.46V1763s5.55,35.84,46,35.84H1670.41s43.1-.43,43.74-40.32v-400s-.86-44.16-41.6-44.16H1330s-29.44,5.12-40.32,35.84l-53.12,109.12s-17.39,40.86-44.27,41.07l-669.66.21s-24.64-1-41.28-36.16L430.3,1360s-19.2-43.1-48.64-43.1L38,1317.5S2.13,1322.62,0,1358.46Z" />
+            <g class="cls-7">
+                <path class="cls-8"
+                    d="M147,1358.46V1763s4.53,35.84,37.55,35.84H1509.67s35.15-.43,35.67-40.32v-400s-.69-44.16-33.93-44.16H1232s-24,5.12-32.89,35.84l-43.34,109.12s-14.18,40.86-36.11,41.07l-546.3.21s-20.1-1-33.68-36.16L498,1360s-15.66-43.1-39.68-43.1l-280.37.64S148.7,1322.62,147,1358.46Z" />
+            </g>
+            <g class="cls-9">
+                <path class="cls-8"
+                    d="M0,1358.46V1763s5.55,35.84,46,35.84H1670.41s43.1-.43,43.74-40.32v-400s-.86-44.16-41.6-44.16H1330s-29.44,5.12-40.32,35.84l-53.12,109.12s-17.39,40.86-44.27,41.07l-669.66.21s-24.64-1-41.28-36.16L430.3,1360s-19.2-43.1-48.64-43.1L38,1317.5S2.13,1322.62,0,1358.46Z" />
+            </g>
+            <rect class="cls-10" x="108.59" y="1648.71" width="155.52" height="55.68" rx="27.84" />
+            <rect class="cls-10" x="108.59" y="1563.27" width="155.52" height="55.68" rx="27.84" />
+        </g>
+        <g id="carita">
+            <g id="esfera" class="animate-zoom animate-zoom--1">
+                <g class="cls-11">
+                    <circle class="cls-12" cx="421.44" cy="283.68" r="95.57" />
+                    <ellipse class="cls-13" cx="342.67" cy="283.04" rx="95.57" ry="91.09" />
+                </g>
+            </g>
+            <g id="esfera-2" class="animate-zoom animate-zoom--3">
+                <g class="cls-14">
+                    <circle class="cls-15" cx="1104.49" cy="145.82" r="76.91" />
+                    <ellipse class="cls-16" cx="1041.1" cy="145.31" rx="76.91" ry="73.3" />
+                </g>
+            </g>
+            <g id="equis" class="animate-zoom animate-zoom--9">
+                <rect class="cls-17" x="648.88" y="-15.92" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(247.23 -460.06) rotate(45)" />
+                <rect class="cls-17" x="648.88" y="-15.92" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(1207.42 -363.33) rotate(135)" />
+            </g>
+            <g id="equis-2" class="animate-zoom animate-zoom--6">
+                <rect class="cls-17" x="1252.62" y="242.45" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(606.76 -811.29) rotate(45)" />
+                <rect class="cls-17" x="1252.62" y="242.45" width="60.16" height="168.65" rx="30.08"
+                    transform="translate(2420.77 -349.16) rotate(135)" />
+            </g>
+            <rect id="pelo-1" class="cls-13 pelo-1 animate-zoom animate-zoom--8" x="830.3" y="252.54" width="52.91" height="133.12" rx="26.45" />
+            <rect id="pelo-2" class="cls-13 pelo-2 animate-zoom animate-zoom--2" x="692.06" y="291.58" width="52.91" height="133.12" rx="26.45" />
+            <rect id="pelo-3" class="cls-13 pelo-3 animate-zoom animate-zoom--6" x="970.25" y="292.7" width="52.91" height="133.12" rx="26.45" />
+            <ellipse id="sombra" class="cls-5 animate-sombra" cx="857.58" cy="1129.4" rx="338.11" ry="99.84" />
+            <g id="cara" class="animate-cara">
+                <g class="cls-18">
+                    <circle class="cls-12" cx="857.58" cy="831.21" r="312.01" />
+                    <circle class="cls-19" cx="737.07" cy="831.21" r="312.01" />
+                </g>
+                <circle id="ojo-derecho" class="cls-20" cx="709.71" cy="797.98" r="27.04" />
+                <circle id="ojo-izquierdo" class="cls-20" cx="1005.55" cy="797.98" r="27.04" />
+                <rect id="boca" class="cls-20" x="753.5" y="890.41" width="196.91" height="44.8" rx="22.4" />
+            </g>
+        </g>
+    </g>
+</svg>

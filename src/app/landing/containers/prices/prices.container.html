@@ -1,0 +1,283 @@
+<section #top class="wrapper-plans">
+  <div class="container">
+    <div class="keo-col-row">
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="info">
+          <h2
+            class="title-app text-center animate__animated animate__slideInDown"
+          >
+            Nuestros planes
+          </h2>
+          <p
+            class="subtitle-app text-center animate__animated animate__slideInDown"
+          >
+            Sistema de Agendamiento Online más Flexible y Versátil del Mercado
+            Para Automatizar el Agendamiento, Venta y Recordatorio de tus
+            Servicios.
+          </p>
+
+          <button
+            type="button"
+            (click)="goFreeTrial()"
+            class="button-app button-app--second-color animate__animated animate__slideInDown"
+            style="display: flex !important; margin: 2rem auto 0 !important"
+          >
+            Prueba gratis
+          </button>
+        </div>
+      </div>
+      <div class="keo-col--12 keo-col--table-12 keo-col--mobile-12">
+        <div class="tag-prices">
+          <div
+            (click)="international = false"
+            class="tag-prices--option"
+            [ngClass]="[!international ? 'active' : '']"
+          >
+            CLP
+          </div>
+          <div
+            (click)="international = true"
+            class="tag-prices--option"
+            [ngClass]="[international ? 'active' : '']"
+          >
+            USD
+          </div>
+        </div>
+        <div class="plans">
+          <div class="plans--thead">
+            <div class="th">
+              <p class="text">Beneficios</p>
+            </div>
+            <div class="th">
+              <p class="text">Básico</p>
+            </div>
+            <div class="th">
+              <p class="text">Medio</p>
+            </div>
+            <div class="th">
+              <p class="text">Prime</p>
+            </div>
+          </div>
+          <div class="plans--tbody">
+            <div class="tr prices">
+              <div class="td">Mensual</div>
+              <div class="td">
+                {{ !international ? '19.890 + IVA' : '19.90$' }}
+              </div>
+              <div class="td">
+                {{ !international ? '23.990 + IVA' : '24.90$' }}
+              </div>
+              <div class="td">
+                {{ !international ? '29.990 + IVA' : '29.90$' }}
+              </div>
+            </div>
+            <div class="tr prices">
+              <div class="td">Anual</div>
+              <div class="td">
+                {{ !international ? '17.890 x 12 + IVA' : '17.90$' }}
+              </div>
+              <div class="td">
+                {{ !international ? '19.990 x 12 + IVA' : '19.90$' }}
+              </div>
+              <div class="td">
+                {{ !international ? '24.990 x 12 + IVA' : '24.90$' }}
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">N° Servicios</div>
+              <div class="td">25</div>
+              <div class="td">50</div>
+              <div class="td">100</div>
+            </div>
+            <div class="tr">
+              <div class="td">N° Profesionales</div>
+              <div class="td">3</div>
+              <div class="td">6</div>
+              <div class="td">25</div>
+            </div>
+            <div class="tr">
+              <div class="td">Citas Ilimitadas</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Correos Ilimitados</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Widget de WhatsApp</div>
+              <div class="td">
+                <span class="icon fi fi-br-cross color-error"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Mensajes WhatsApp</div>
+              <div class="td">50</div>
+              <div class="td">100</div>
+              <div class="td">200</div>
+            </div>
+            <div class="tr">
+              <div class="td">Reportes de gestion</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Notificaciones y alertas</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Redes sociales</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Fichas Personalizables</div>
+              <div class="td">
+                <span class="icon fi fi-br-cross color-error"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-cross color-error"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Agregar portada y logo</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Personalizar colores del sitio</div>
+              <div class="td">
+                <span class="icon fi fi-br-cross color-error"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Video llamadas</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Limite de asistencias a la video llamada</div>
+              <div class="td">29</div>
+              <div class="td">69</div>
+              <div class="td">99</div>
+            </div>
+            <div class="tr">
+              <div class="td">Soporte 24/7</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Capacitacion inicial de Configuración</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Google Calendar</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td">Pasarela de pago WebPay - Valido en Chile</div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+              <div class="td">
+                <span class="icon fi fi-br-check color-success"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

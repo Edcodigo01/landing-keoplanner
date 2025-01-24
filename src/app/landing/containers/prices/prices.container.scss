@@ -1,0 +1,187 @@
+.wrapper-banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: max-content;
+    min-height: calc(100% - 305px);
+    padding: 4rem 1rem;
+    background: transparent;
+}
+
+.title-app {
+    width: 100%;
+    margin: 0 0 3rem;
+    font-size: calc(var(--fs-title) + 4px);
+    text-align: center;
+}
+
+.wrapper-plans {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: max-content;
+    padding: 4rem 1rem;
+    background: var(--base);
+
+    .info {
+        position: relative;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto 1rem;
+        z-index: 2;
+    }
+}
+
+.tag-prices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    &--option {
+        width: max-content;
+        padding: .5rem .75rem;
+        border-radius: calc(var(--border-radius) - 4px);
+        font-size: calc(var(--fs-subtitle) - 2px);
+        color: var(--text);
+        font-family: var(--ff);
+        font-weight: var(--fw-bold);
+        background: var(--border-color);
+        margin: 0 .5rem;
+        user-select: none;
+        cursor: pointer;
+
+        &.active {
+            background: var(--first-color);
+            color: var(--white);
+            cursor: initial;
+        }
+    }
+}
+
+.plans {
+    --wTitle: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto 0;
+
+    background: var(--base-alt);
+    padding: .5rem;
+    border-radius: calc(var(--border-radius) + 4px);
+
+    &--thead,
+    &--tbody {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    &--thead {
+        .th {
+            width: calc((100% - var(--wTitle)) / 3);
+            text-align: center;
+            font-family: var(--ff);
+            font-size: var(--fs-subtitle);
+            font-weight: var(--fw-bold);
+            color: var(--second-color);
+            border-bottom: 1px solid var(--border-color);
+
+            &:first-child {
+                width: var(--wTitle);
+                text-align: left;
+            }
+
+            .text {
+                margin: 0;
+                padding: .5rem;
+            }
+        }
+    }
+
+    &--tbody {
+        flex-direction: column;
+
+        .tr {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: max-content;
+            margin-top: .5rem;
+            border-radius: calc(var(--border-radius) - 8px);
+
+            .td {
+                width: calc((100% - var(--wTitle)) / 3);
+                text-align: center;
+                font-family: var(--ff);
+                font-size: var(--fs-paragraph);
+                font-weight: var(--fw-bold);
+                color: var(--text);
+                padding: .5rem;
+                user-select: none;
+
+                &:first-child {
+                    width: var(--wTitle);
+                    text-align: left;
+                }
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:nth-child(2n) {
+                background: var(--border-color);
+            }
+
+            &.prices {
+                background: var(--second-color);
+
+                .td {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 966px) {
+        --wTitle: 250px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        --wTitle: 200px;
+    }
+
+    @media only screen and (max-width: 540px) {
+        --wTitle: 200px;
+        overflow-x: auto;
+
+        &--thead,
+        &--tbody {
+            width: max-content;
+        }
+
+        &--thead {
+            .th {
+                width: 150px;
+            }
+        }
+
+        &--tbody {
+            .tr {
+                .td {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

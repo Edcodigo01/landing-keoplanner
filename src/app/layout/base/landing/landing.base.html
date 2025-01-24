@@ -1,0 +1,159 @@
+<div class="wrapper-landing">
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar--brand">
+        <img
+          routerLink="/"
+          class="logo"
+          src="assets/img/planner/logo.svg"
+          alt="logo | https://keoplanner.com"
+        />
+      </div>
+      <div class="navbar--nav">
+        <span
+          (click)="showNavigation = !showNavigation"
+          class="hamburguesa pi pi-align-right"
+        ></span>
+
+        <ul
+          class="nav reset animate__animated animate__fast"
+          [ngClass]="[showNavigation ? 'animate__fadeInRight show-nav' : '']"
+        >
+          <li (click)="showNavigation = false" class="item cursor-pointer">
+            <a class="link" (click)="goToConocenos()">Inicio</a>
+          </li>
+          <li (click)="showNavigation = false" class="item cursor-pointer">
+            <a class="link" (click)="goToPreguntas()">Preguntas Frecuentes</a>
+          </li>
+          <li (click)="showNavigation = false" class="item cursor-pointer">
+            <a class="link" (click)="goToContact()">Contacto</a>
+          </li>
+          <li (click)="showNavigation = false" class="item cursor-pointer">
+            <a class="link" routerLink="/plans">Planes</a>
+          </li>
+          <li (click)="showNavigation = false" class="item login">
+            <button
+              type="button"
+              (click)="goDashboard()"
+              class="button-app button-app--second-color"
+            >
+              Iniciar sesión
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-scrolling-y">
+    <div class="content">
+      <router-outlet></router-outlet>
+      <keo-whatsapp-chat
+        kwcTitle="Hola, bienvenido..."
+        kwcSubtitle="¡Hola! ¿Necesitas ayuda? comunicate con nosotros a traves de WhatsApp con el área de soporte."
+        kwcTextHelp="El equipo suele responder en unos minutos."
+        kwcPhone="+56936410744"
+        kwcFirstColor="var(--second-color)"
+        kwcSecondColor="var(--white)"
+      ></keo-whatsapp-chat>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="keo-col-row">
+          <div class="keo-col--3 keo-col--table--6 keo-col--mobile-12">
+            <div class="brand">
+              <img
+                class="logo"
+                src="assets/img/planner/logo-white.svg"
+                alt="logo | https://keoplanner.com"
+              />
+            </div>
+            @if (markRegister) {
+            <h5 class="marca-register">Marca registrada.</h5>
+            }
+          </div>
+          <div class="keo-col--3 keo-col--table--6 keo-col--mobile-12">
+            <h3 class="footer__title">Acerca de</h3>
+            <ul class="footer__nav reset">
+              <li class="list">
+                <a (click)="goToConocenos()" class="link cursor-pointer"
+                  >Conócenos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="keo-col--3 keo-col--table--6 keo-col--mobile-12">
+            <h3 class="footer__title">Recursos</h3>
+            <ul class="footer__nav reset">
+              <li class="list">
+                <a (click)="goToPreguntas()" class="link cursor-pointer"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li class="list">
+                <a (click)="goToContact()" class="link cursor-pointer"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="keo-col--3 keo-col--table--6 keo-col--mobile-12">
+            <h3 class="footer__title">Síguenos</h3>
+            <ul class="footer__nav reset social">
+              <li class="list">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100084409910156"
+                  target="_blank"
+                  class="link"
+                  ><span class="icon pi pi-facebook"></span
+                ></a>
+              </li>
+              <li class="list">
+                <a
+                  href="https://www.instagram.com/keoplanner/?hl=es-la"
+                  target="_blank"
+                  class="link"
+                  ><span class="icon pi pi-instagram"></span
+                ></a>
+              </li>
+              <li class="list">
+                <a
+                  href="https://twitter.com/keoplanner"
+                  target="_blank"
+                  class="link"
+                  ><span class="icon pi pi-twitter"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="keo-col-row">
+          <div class="keo-col--12">
+            <hr class="separador" />
+          </div>
+          <div class="keo-col--12">
+            <ul class="footer__nav reset ptc">
+              <li class="list">
+                <a routerLink="/policy-privacy" class="link"
+                  >Política y Privacidad</a
+                >
+              </li>
+              <li class="list">
+                <a routerLink="/terms-conditions" class="link"
+                  >Términos y condiciones</a
+                >
+              </li>
+              <li class="list">
+                <a href="mailto:soporte@keoplanner.com" class="link"
+                  >soporte&#64;keoplanner.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<p-toast position="top-right"></p-toast>
+
+<div id="cloudfront-marketing"></div>

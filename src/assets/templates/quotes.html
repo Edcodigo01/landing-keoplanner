@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Cotizaciones {{ name_busi }}</title>
+    </head>
+    <body>
+        <div style="display: block; width: 100%; padding: 2rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-sizing: border-box;">
+            <section style="display: block; width: 100%; margin-bottom: 30px;">
+                <img style="display: block; width: 150px; margin: 0;" src="{{logo_busi}}" alt="{{name_busi}}">
+                <h1 style="margin: 15px 0 30px;">{{name_busi}}</h1>
+
+                <div style="display: table; align-items: center; width: 100%;">
+                    <div style="display: inline-block; width: 50%; height: 16px; border-radius: 5px; background: #ff5f23;"></div>
+                    <div style="display: inline-block; width: 50%; text-align: right;">
+                        <p style="display: block; margin: 0;  width: 100%; text-align: right; font-size: 12px; font-weight: bold; color: #495057;">Fecha {{data_cotizacion}}</p>
+                    </div>
+                </div>
+            </section>
+            <section style="display: block; width: 100%; margin-bottom: 30px;">
+                <div style="display: table; width: 100%;">
+                    <div style="display: inline-block; width: 82%;">
+                        <p style="font-size: 12px; font-weight: normal; color: #495057; margin: 0 0 5px;">Cotización de:</p>
+                        <p style="font-size: 14px; font-weight: bold; color: #495057; margin: 0 0 5px;">{{name_user_busi}}</p>
+                        <p style="font-size: 12px; font-weight: normal; color: #495057; margin: 0 0 5px;">{{address_busi}}</p>
+                        <p style="font-size: 12px; font-weight: normal; color: #495057; margin: 0;">{{telefo_busi}}</p>
+                    </div>
+                    <div style="width: 18%; display: inline-block;">
+                        <div style="display: inline-block; width: 16px; height: 75px; background: #e5e5e5; border-radius: 5px; margin: 0 5px;"></div>
+                        <div style="display: inline-block; width: 16px; height: 75px; background: #e5e5e5; border-radius: 5px; margin: 0 5px;"></div>
+                        <div style="display: inline-block; width: 16px; height: 75px; background: #e5e5e5; border-radius: 5px; margin: 0 5px;"></div>
+                        <div style="display: inline-block; width: 16px; height: 75px; background: #e5e5e5; border-radius: 5px; margin: 0 0 0 5px;"></div>
+                    </div>
+                </div>
+            </section>
+            <section style="display: block; width: 100%; margin-bottom: 30px;">
+                <table style="width: 100%; text-align: center; font-size: 12px;">
+                    <thead>
+                        <tr style="height: 40px; line-height: 40px; background: #ff5f23; color: #ffffff;">
+                            <th>Cant.</th>
+                            <th>Producto / Servicio</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 40px; line-height: 40px;">
+                            <td style="border-bottom: 1px solid #e5e5e5;">1</td>
+                            <td style="border-bottom: 1px solid #e5e5e5;">Champoo</td>
+                            <td style="border-bottom: 1px solid #e5e5e5;">10 USD</td>
+                            <td style="border-bottom: 1px solid #e5e5e5;">10 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section style="display: block; width: 100%; margin-bottom: 60px;">
+                <div style="display: block; width: 100%;">
+                    <div style="display: block; width: 100%;">
+                        <p style="font-size: 14px; font-weight: bold; color: #495057; margin: 0; text-align: right;">Total: {{total}}</p>
+                    </div>
+                </div>
+            </section>
+            <section style="display: block; width: 100%; margin-bottom: 30px;">
+                <div style="display: table; width: 100%;">
+                    <div style="display: inline-block; width: 80%;">
+                        <p style="font-size: 16px; font-weight: normal; color: #495057; margin: 0 0 5px;">{{address_busi}}</p>
+                        <p style="font-size: 16px; font-weight: normal; color: #495057; margin: 0 0 5px;">{{telefo_busi}}</p>
+                        <p style="font-size: 16px; font-weight: normal; color: #495057; margin: 0;">https://keoplanner.com/business/{{slug_busi}}</p>
+                    </div>
+                    <div style="display: inline-block; width: 20%;">
+                        <p style="font-size: 16px; text-align: center; font-weight: bold; color: #495057; margin: 0 0 5px;">{{name_admin}}</p>
+                        <p style="font-size: 10px; text-align: center; font-weight: normal; color: #495057; margin: 0;">Administrador</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
